@@ -42,10 +42,13 @@ Food in the University of Texas at El Paso, everything from restaurants food pla
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
 **Chunk size:**
+200
 
 **Overlap:**
+50
 
 **Reasoning:**
+The source documents are relatively short webpages containing FAQs, dining schedules, meal plan descriptions, and food pantry information. A chunk size of 200 characters allows individual topics and policies to be separated into focused chunks, improving retrieval precision. A 50-character overlap helps preserve context when important information spans chunk boundaries.
 
 ---
 
@@ -58,10 +61,13 @@ Food in the University of Texas at El Paso, everything from restaurants food pla
      support, accuracy on domain-specific text, latency? -->
 
 **Embedding model:**
+all-MiniLM-L6-v2
 
 **Top-k:**
+3
 
 **Production tradeoff reflection:**
+If costs were not a constraint, I would consider embedding models with higher retieval accuricy and even multilingual support. This is because utep is one of the highest universities with latino students. I would also consider tradeoff between accuracy and latency as larger models provide better results, but requiere more computational power so they might be slower. In addition since the amount of infomration is not that vast it might not have a big impact.
 
 ---
 
@@ -74,11 +80,11 @@ Food in the University of Texas at El Paso, everything from restaurants food pla
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | How Much does the Blocks of 60 meals plan cost | $710.48 |
+| 2 | Is Einstein Bros. Bagels open in summer? | No it is closed |
+| 3 | What do I need to pick up food at the Food Pantry? | Be an active student, faculty and staff member and bring your physical or digital UTEP ID. |
+| 4 | What type of food does Amar serve? | Peruvian |
+| 5 | What is the rating of Raisin Canes | 4.4 |
 
 ---
 
@@ -88,9 +94,9 @@ Food in the University of Texas at El Paso, everything from restaurants food pla
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. The biggest issue is that the documentaiton is really diferent. Some use more of a blog approach and others work more as a list of information. So by standarizing the size across all the documentation it might get inaccurate information.
 
-2.
+2.  The Trip Advisor might show more information through images then text which might couse some information inaccuracy.
 
 ---
 
@@ -101,7 +107,59 @@ Food in the University of Texas at El Paso, everything from restaurants food pla
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
-
+┌──────────────────────────┐
+│   Document Ingestion     │
+│                          │
+│ UTEP Dining Pages        │
+│ TripAdvisor              │
+│ OpenTable                │
+│ Food Pantry Resources    │
+│                          │
+│ WebBaseLoader            │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│        Chunking          │
+│                          │
+│ Chunk Size: 200          │
+│ Overlap: 50             │
+│                          │
+│ RecursiveCharacter       │
+│ TextSplitter            │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Embedding + Vector Store │
+│                          │
+│ all-MiniLM-L6-v2         │
+│ SentenceTransformers     │
+│                          │
+│ ChromaDB                 │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│        Retrieval         │
+│                          │
+│ Similarity Search        │
+│ Top-k = 3               │
+│                          │
+│ Chroma Retriever         │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│        Generation        │
+│                          │
+│ Retrieved Chunks         │
+│ + User Question          │
+│                          │
+│ LLM                      │
+│                          │
+│ Final Answer             │
+└──────────────────────────┘
 ---
 
 ## AI Tool Plan
@@ -117,7 +175,10 @@ Food in the University of Texas at El Paso, everything from restaurants food pla
      with my specified chunk size and overlap" is a plan. -->
 
 **Milestone 3 — Ingestion and chunking:**
+I will use Cloude to generate code that loads, cleans, and chunks my UTEP food-related documents using my specified chunk size and overlap. I will verify the output by inspecting sample chunks and ensuring they are readable, relevant, and free of HTML or navigation text.
 
 **Milestone 4 — Embedding and retrieval:**
+I will use Cloude to generate code that embeds my chunks using all-MiniLM-L6-v2 and stores them in ChromaDB. I will test retrieval with several questions and verify that the returned chunks are relevant and include source information.
 
 **Milestone 5 — Generation and interface:**
+I will use Cloude to generate code that connects retrieval to an LLM and creates a Gradio interface. I will verify that answers come from the retrieved documents, include source attribution, and correctly state when information is unavailable.
