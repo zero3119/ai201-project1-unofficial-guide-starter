@@ -10,6 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+Food in the University of Texas at El Paso, everything from restaurants food plans and even food pantry. This is important since many students face problems from deciding what to eat to actually having enough food to eat. It is important for students to know what resources they have and how they work as well
 
 ---
 
@@ -20,16 +21,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | URL | Explains hoe the meal plans work and what versions are available to students | https://www.utep.edu/vpba/miner-gold-card/meal-plans/meal-plans.html |
+| 2 | URL | Explains the functionality of the Miner Bucks System | https://www.utep.edu/vpba/miner-gold-card/meal-plans/miner-bucks.html |
+| 3 | URL | Explain the usage and function of miner Meals | https://www.utep.edu/vpba/miner-gold-card/meal-plans/miner-meals.html |
+| 4 | URL | The schedule for the food places in campus that are open | https://utepdining.sodexomyway.com/en-us/locations/ |
+| 5 | TripAdvisor | The best restaruants near the University | https://www.tripadvisor.com/RestaurantsNear-g60768-d5790122-University_of_Texas_at_El_Paso-El_Paso_Texas.html |
+| 6 | URL | Another LEast of best rated restaurants near the university | https://www.opentable.com/landmark/restaurants-near-utep-theater |
+| 7 | Blog | A Personal blog of some of the best restaurants near the university | https://roonee.com/restaurants-near-the-university-of-texas-at-el-paso/ |
+| 8 | URL | A frequently asked questions regarding the food pantry in the university | https://www.utep.edu/student-affairs/foodpantry/faq/ |
+| 9 | URL | Location and schedule for the food pantry | https://www.utep.edu/student-affairs/foodpantry/visit-us/ |
+| 10 | URL | Some backstory and purpose of the food pantry | https://www.utep.edu/student-affairs/foodpantry/visit-us/ |
 
 ---
 
