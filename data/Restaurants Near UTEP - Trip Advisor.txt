@@ -1,0 +1,140 @@
+﻿Restaurants Near UTEP - Trip Advisor
+
+
+Restaurant: Crave Kitchen and Bar
+Distance: 0.5 miles
+Cuisine: American, Bar
+Price: $$ - $$$
+Rating: 4.2/5
+Review Highlights:
+- Great breakfast
+- Delicious bacon and scrambled eggs
+
+
+Restaurant: Taft Diaz
+Distance: 1.3 miles
+Cuisine: French, American
+Price: $$$$
+Rating: 4.9/5
+Review Highlights:
+- Wagyu Ribeye highly praised
+- Corn and truffle soup was amazing
+
+
+Restaurant: Whataburger
+Distance: 0.3 miles
+Cuisine: American, Fast Food
+Price: $
+Rating: 4.2/5
+Review Highlights:
+- Popular green chile cheeseburger
+
+
+Restaurant: 1700° Steakhouse
+Distance: 1.2 miles
+Cuisine: Steakhouse
+Price: $$$$
+Rating: 4.9/5
+Review Highlights:
+- Excellent dinner and drinks
+
+
+Restaurant: Chick-fil-A
+Distance: 0.2 miles
+Rating: 5.0/5
+Review Highlights:
+- Highly rated fast food option
+
+
+Restaurant: Rib Hut
+Distance: 0.5 miles
+Cuisine: American, Southwestern
+Price: $$ - $$$
+Rating: 4.0/5
+Review Highlights:
+- Great BBQ
+- Homemade BBQ sauce
+
+
+Restaurant: Raising Cane's Chicken Fingers
+Distance: 0.3 miles
+Cuisine: American
+Price: $$ - $$$
+Rating: 4.4/5
+Review Highlights:
+- Excellent customer service
+- Chicken strips
+
+
+Restaurant: Kaedama
+Distance: 0.4 miles
+Cuisine: Japanese, Asian
+Rating: 4.3/5
+Review Highlights:
+- Popular ramen restaurant
+
+
+Restaurant: Tara Thai Kitchen
+Distance: 0.5 miles
+Cuisine: Thai
+Price: $$ - $$$
+Rating: 3.8/5
+Review Highlights:
+- Good Thai food
+
+
+Restaurant: Ardovino's Pizza
+Distance: 0.5 miles
+Cuisine: Italian, Pizza
+Price: $$ - $$$
+Rating: 4.1/5
+Review Highlights:
+- Local Italian restaurant
+- Pizza and sandwiches
+
+
+Restaurant: Sinbad
+Distance: 0.5 miles
+Cuisine: Mediterranean, Middle Eastern
+Price: $$ - $$$
+Rating: 4.6/5
+Review Highlights:
+- Excellent chicken shawarma
+
+
+Restaurant: Lucy's Cafe
+Distance: 0.6 miles
+Cuisine: Mexican, Cafe
+Price: $
+Rating: 4.8/5
+Review Highlights:
+- Excellent breakfast
+- Mexican omelet highly recommended
+
+
+Restaurant: Amar Peruvian & Mexican Kitchen
+Distance: 0.7 miles
+Cuisine: Mexican, Peruvian
+Price: $$ - $$$
+Rating: 4.7/5
+Review Highlights:
+- Snapper and ceviche highly rated
+
+
+Restaurant: El Taco Tote
+Distance: 0.6 miles
+Cuisine: Mexican, Latin
+Price: $
+Rating: 3.8/5
+Review Highlights:
+- Large salsa selection
+- Good tacos
+
+
+Restaurant: Chipotle Mexican Grill
+Distance: 0.6 miles
+Cuisine: Mexican, Fast Food
+Price: $$ - $$$
+Rating: 4.0/5
+Review Highlights:
+- Good service

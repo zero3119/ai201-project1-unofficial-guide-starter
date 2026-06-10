@@ -1,0 +1,91 @@
+﻿Restaurants Near UTEP Theater - OpenTable
+
+
+Restaurant: Amar
+Rating: Exceptional
+Reviews: 148
+Cuisine: Peruvian
+Price: $$$$
+Location: El Paso
+Notes: Peruvian and Mexican kitchen based on family flavors, techniques, and dishes.
+
+
+Restaurant: Café Central
+Rating: Exceptional
+Reviews: 2531
+Cuisine: Contemporary American
+Price: $$$$
+Location: El Paso
+Notes: Fine dining with gourmet dishes, Southwestern twist, wine selection, and strong service.
+
+
+Restaurant: Casa Pantera
+Rating: Awesome
+Reviews: 1393
+Cuisine: Contemporary Mexican
+Price: $$$$
+Location: El Paso
+Notes: Wood-fired Mexican chophouse with Oaxacan and Riviera Maya influences.
+
+
+Restaurant: Anson11
+Rating: Exceptional
+Reviews: 1566
+Cuisine: Global, International
+Price: $$$$
+Location: El Paso
+Notes: Offers casual bistro dining and an upstairs fine-dining experience.
+
+
+Restaurant: 1700° Steakhouse
+Rating: Exceptional
+Reviews: 678
+Cuisine: Steakhouse
+Price: $$$$
+Location: El Paso
+Notes: Fine dining steakhouse with aged USDA Prime beef, seafood, wines, and cocktails.
+
+
+Restaurant: Weso Steakhouse
+Rating: Awesome
+Reviews: 656
+Cuisine: Steakhouse
+Price: $$$$
+Location: El Paso
+Notes: Steakhouse focused on high-quality ingredients and international cuisine.
+
+
+Restaurant: Sushi Itto
+Rating: Exceptional
+Reviews: 340
+Cuisine: Sushi
+Price: $$$$
+Location: El Paso
+Notes: Upscale Japanese restaurant with sushi, sashimi, noodles, cocktails, and Japanese spirits.
+
+
+Restaurant: Taft Diaz
+Rating: Awesome
+Reviews: 500
+Cuisine: Contemporary American
+Price: $$$$
+Location: El Paso
+Notes: Contemporary restaurant centered around welcoming guests and shared dining.
+
+
+Restaurant: Park Tavern
+Rating: Exceptional
+Reviews: 637
+Cuisine: American
+Price: $$$$
+Location: El Paso
+Notes: American restaurant with a warm, casual-elegant atmosphere and traditional bar.
+
+
+Restaurant: Sabor
+Rating: Awesome
+Reviews: 224
+Cuisine: Mexican / Southwestern
+Price: $$$$
+Location: El Paso
+Notes: Downtown restaurant inside Hotel Paso Del Norte, serving breakfast, lunch, dinner, and brunch.

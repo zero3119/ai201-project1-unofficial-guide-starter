@@ -1,14 +1,16 @@
 import json
 import re
 import requests
+import os
 from bs4 import BeautifulSoup
 
 URLS = [
     "https://www.utep.edu/vpba/miner-gold-card/meal-plans/meal-plans.html",
     "https://www.utep.edu/vpba/miner-gold-card/meal-plans/miner-bucks.html",
     "https://www.utep.edu/vpba/miner-gold-card/meal-plans/miner-meals.html",
-    "https://utepdining.sodexomyway.com/en-us/locations/",
+    "https://roonee.com/restaurants-near-the-university-of-texas-at-el-paso/",
     "https://www.utep.edu/student-affairs/foodpantry/faq/",
+    "https://www.utep.edu/student-affairs/foodpantry/visit-us/",
     "https://www.utep.edu/student-affairs/foodpantry/visit-us/"
 ]
 
@@ -79,6 +81,25 @@ for url in URLS:
             "chunk_id": i,
             "text": chunk
         })
+
+RAW_DIR = "data"
+
+for filename in os.listdir(RAW_DIR):
+    if filename.endswith(".txt"):
+        path = os.path.join(RAW_DIR, filename)
+        print(f"Loading local file: {path}")
+
+        with open(path, "r", encoding="utf-8") as file:
+            text = clean_text(file.read())
+
+        chunks = chunk_text(text)
+
+        for i, chunk in enumerate(chunks):
+            all_chunks.append({
+                "source": filename,
+                "chunk_id": i,
+                "text": chunk
+            })
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
     json.dump(all_chunks, file, indent=2)

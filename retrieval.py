@@ -52,12 +52,17 @@ def retrieve(query, k=4):
         n_results=k
     )
 
+    retrieved = []
+
     for i in range(len(results["documents"][0])):
-        print("-" * 60)
-        print("Distance:", results["distances"][0][i])
-        print("Source:", results["metadatas"][0][i]["source"])
-        print("Chunk ID:", results["metadatas"][0][i]["chunk_id"])
-        print(results["documents"][0][i])
+        retrieved.append({
+            "text": results["documents"][0][i],
+            "source": results["metadatas"][0][i]["source"],
+            "chunk_id": results["metadatas"][0][i]["chunk_id"],
+            "distance": results["distances"][0][i]
+        })
+
+    return retrieved
 
 
 if __name__ == "__main__":
@@ -65,11 +70,19 @@ if __name__ == "__main__":
 
     test_questions = [
         "What are Miner Bucks?",
-        "Can meal plans be refunded?",
-        "Where is the food pantry located?"
+        "Is Einsten bagels open during summer?",
+        "Can meal plans be refunded?"
     ]
 
     for question in test_questions:
         print("\n" + "=" * 60)
         print("QUERY:", question)
-        retrieve(question, k=4)
+
+        results = retrieve(question, k=4)
+
+        for result in results:
+            print("-" * 60)
+            print("Distance:", result["distance"])
+            print("Source:", result["source"])
+            print("Chunk ID:", result["chunk_id"])
+            print(result["text"])
