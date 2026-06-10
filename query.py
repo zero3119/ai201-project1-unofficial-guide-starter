@@ -42,6 +42,7 @@ Question:
     sources = sorted(set(chunk["source"] for chunk in retrieved_chunks))
 
     return {
-        "answer": response.choices[0].message.content,
-        "sources": sources
-    }
+    "answer":  response.choices[0].message.content,
+    "sources": sources,
+    "chunks": retrieved_chunks
+}
